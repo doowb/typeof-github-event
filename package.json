@@ -1,6 +1,6 @@
 {
   "name": "typeof-github-event",
-  "description": "Detect typeof github webhook events.",
+  "description": "Detect the type of github webhook events.",
   "version": "0.1.0",
   "homepage": "https://github.com/doowb/typeof-github-event",
   "author": "Brian Woodward (https://github.com/doowb)",
