@@ -8,10 +8,11 @@
 'use strict';
 
 var events = require('./lib/event-map');
+var utils = require('./lib/utils');
 
 module.exports = {
   typeof: function(payload) {
-    var validate = valid(payload);
+    var validate = utils.valid(payload);
     var keys = Object.keys(events);
     var len = keys.length, i = -1;
     while (++i < len) {
@@ -25,19 +26,6 @@ module.exports = {
   }
 };
 
-function valid(payload) {
-  return function(event) {
-    var props = event.props;
-    var len = props.length, i = -1;
-    while (++i < len) {
-      var prop = props[i];
-      if (!payload.hasOwnProperty(prop)) {
-        return false;
-      }
-    }
-    if (typeof event.validate === 'function') {
-      return event.validate(payload);
-    }
-    return true;
-  };
-}
+Object.keys(events).forEach(function(key) {
+  utils.createMethod(module.exports, key);
+});
