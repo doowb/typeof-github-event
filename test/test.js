@@ -104,6 +104,10 @@ describe('github-event', function() {
       it('should validate payload is commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), true);
       });
+      it('should validate payload is commit_comment through specific is commit_comment method', function() {
+        assert.equal(events.is('commit_comment', payload), true);
+        assert.equal(events.isCommitComment(payload), true);
+      });
       it('should validate payload is not create', function() {
         assert.equal(events.is('create', payload), false);
       });
@@ -173,6 +177,10 @@ describe('github-event', function() {
 
       it('should validate payload is create', function() {
         assert.equal(events.is('create', payload), true);
+      });
+      it('should validate payload is create through specific is create method', function() {
+        assert.equal(events.is('create', payload), true);
+        assert.equal(events.isCreate(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -244,6 +252,10 @@ describe('github-event', function() {
       it('should validate payload is delete', function() {
         assert.equal(events.is('delete', payload), true);
       });
+      it('should validate payload is delete through specific is delete method', function() {
+        assert.equal(events.is('delete', payload), true);
+        assert.equal(events.isDelete(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -313,6 +325,10 @@ describe('github-event', function() {
 
       it('should validate payload is deployment', function() {
         assert.equal(events.is('deployment', payload), true);
+      });
+      it('should validate payload is deployment through specific is deployment method', function() {
+        assert.equal(events.is('deployment', payload), true);
+        assert.equal(events.isDeployment(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -384,6 +400,10 @@ describe('github-event', function() {
       it('should validate payload is deployment_status', function() {
         assert.equal(events.is('deployment_status', payload), true);
       });
+      it('should validate payload is deployment_status through specific is deployment_status method', function() {
+        assert.equal(events.is('deployment_status', payload), true);
+        assert.equal(events.isDeploymentStatus(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -453,6 +473,10 @@ describe('github-event', function() {
 
       it('should validate payload is fork', function() {
         assert.equal(events.is('fork', payload), true);
+      });
+      it('should validate payload is fork through specific is fork method', function() {
+        assert.equal(events.is('fork', payload), true);
+        assert.equal(events.isFork(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -524,6 +548,10 @@ describe('github-event', function() {
       it('should validate payload is gollum', function() {
         assert.equal(events.is('gollum', payload), true);
       });
+      it('should validate payload is gollum through specific is gollum method', function() {
+        assert.equal(events.is('gollum', payload), true);
+        assert.equal(events.isGollum(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -593,6 +621,10 @@ describe('github-event', function() {
 
       it('should validate payload is issue_comment', function() {
         assert.equal(events.is('issue_comment', payload), true);
+      });
+      it('should validate payload is issue_comment through specific is issue_comment method', function() {
+        assert.equal(events.is('issue_comment', payload), true);
+        assert.equal(events.isIssueComment(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -664,6 +696,10 @@ describe('github-event', function() {
       it('should validate payload is issues', function() {
         assert.equal(events.is('issues', payload), true);
       });
+      it('should validate payload is issues through specific is issues method', function() {
+        assert.equal(events.is('issues', payload), true);
+        assert.equal(events.isIssues(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -733,6 +769,10 @@ describe('github-event', function() {
 
       it('should validate payload is member', function() {
         assert.equal(events.is('member', payload), true);
+      });
+      it('should validate payload is member through specific is member method', function() {
+        assert.equal(events.is('member', payload), true);
+        assert.equal(events.isMember(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -804,6 +844,10 @@ describe('github-event', function() {
       it('should validate payload is membership', function() {
         assert.equal(events.is('membership', payload), true);
       });
+      it('should validate payload is membership through specific is membership method', function() {
+        assert.equal(events.is('membership', payload), true);
+        assert.equal(events.isMembership(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -873,6 +917,10 @@ describe('github-event', function() {
 
       it('should validate payload is page_build', function() {
         assert.equal(events.is('page_build', payload), true);
+      });
+      it('should validate payload is page_build through specific is page_build method', function() {
+        assert.equal(events.is('page_build', payload), true);
+        assert.equal(events.isPageBuild(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -944,6 +992,10 @@ describe('github-event', function() {
       it('should validate payload is public', function() {
         assert.equal(events.is('public', payload), true);
       });
+      it('should validate payload is public through specific is public method', function() {
+        assert.equal(events.is('public', payload), true);
+        assert.equal(events.isPublic(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -1013,6 +1065,10 @@ describe('github-event', function() {
 
       it('should validate payload is pull_request', function() {
         assert.equal(events.is('pull_request', payload), true);
+      });
+      it('should validate payload is pull_request through specific is pull_request method', function() {
+        assert.equal(events.is('pull_request', payload), true);
+        assert.equal(events.isPullRequest(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -1084,6 +1140,10 @@ describe('github-event', function() {
       it('should validate payload is pull_request_review_comment', function() {
         assert.equal(events.is('pull_request_review_comment', payload), true);
       });
+      it('should validate payload is pull_request_review_comment through specific is pull_request_review_comment method', function() {
+        assert.equal(events.is('pull_request_review_comment', payload), true);
+        assert.equal(events.isPullRequestReviewComment(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -1153,6 +1213,10 @@ describe('github-event', function() {
 
       it('should validate payload is push', function() {
         assert.equal(events.is('push', payload), true);
+      });
+      it('should validate payload is push through specific is push method', function() {
+        assert.equal(events.is('push', payload), true);
+        assert.equal(events.isPush(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -1224,6 +1288,10 @@ describe('github-event', function() {
       it('should validate payload is release', function() {
         assert.equal(events.is('release', payload), true);
       });
+      it('should validate payload is release through specific is release method', function() {
+        assert.equal(events.is('release', payload), true);
+        assert.equal(events.isRelease(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -1293,6 +1361,10 @@ describe('github-event', function() {
 
       it('should validate payload is repository', function() {
         assert.equal(events.is('repository', payload), true);
+      });
+      it('should validate payload is repository through specific is repository method', function() {
+        assert.equal(events.is('repository', payload), true);
+        assert.equal(events.isRepository(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
@@ -1364,6 +1436,10 @@ describe('github-event', function() {
       it('should validate payload is status', function() {
         assert.equal(events.is('status', payload), true);
       });
+      it('should validate payload is status through specific is status method', function() {
+        assert.equal(events.is('status', payload), true);
+        assert.equal(events.isStatus(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -1434,6 +1510,10 @@ describe('github-event', function() {
       it('should validate payload is team_add', function() {
         assert.equal(events.is('team_add', payload), true);
       });
+      it('should validate payload is team_add through specific is team_add method', function() {
+        assert.equal(events.is('team_add', payload), true);
+        assert.equal(events.isTeamAdd(payload), true);
+      });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
       });
@@ -1503,6 +1583,10 @@ describe('github-event', function() {
 
       it('should validate payload is watch', function() {
         assert.equal(events.is('watch', payload), true);
+      });
+      it('should validate payload is watch through specific is watch method', function() {
+        assert.equal(events.is('watch', payload), true);
+        assert.equal(events.isWatch(payload), true);
       });
       it('should validate payload is not commit_comment', function() {
         assert.equal(events.is('commit_comment', payload), false);
