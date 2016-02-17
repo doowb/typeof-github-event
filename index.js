@@ -1,10 +1,9 @@
 /*!
- * github-event <https://github.com/doowb/github-event>
+ * typeof-github-event <https://github.com/doowb/typeof-github-event>
  *
  * Copyright (c) 2016, Brian Woodward.
  * Licensed under the MIT License.
  */
-
 'use strict';
 
 var events = require('./lib/event-map');

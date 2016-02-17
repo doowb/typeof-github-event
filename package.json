@@ -1,11 +1,11 @@
 {
-  "name": "github-event",
-  "description": "Detect and check github webhook event types.",
+  "name": "typeof-github-event",
+  "description": "Detect typeof github webhook events.",
   "version": "0.1.0",
-  "homepage": "https://github.com/doowb/github-event",
+  "homepage": "https://github.com/doowb/typeof-github-event",
   "author": "Brian Woodward ()",
-  "repository": "https://github.com/doowb/github-event",
-  "bugs": "https://github.com/doowb/github-event/issues",
+  "repository": "https://github.com/doowb/typeof-github-event",
+  "bugs": "https://github.com/doowb/typeof-github-event/issues",
   "license": "MIT",
   "files": [
     "index.js"
