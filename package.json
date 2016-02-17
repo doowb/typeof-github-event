@@ -18,6 +18,7 @@
     "test": "mocha"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.7",
     "mocha": "*",
     "should": "*"
   },
@@ -26,5 +27,17 @@
     "events",
     "webhook",
     "webhooks"
-  ]
+  ],
+  "verb": {
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "github-base",
+        "githubbot"
+      ]
+    }
+  }
 }
