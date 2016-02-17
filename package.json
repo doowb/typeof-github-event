@@ -19,8 +19,7 @@
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.7",
-    "mocha": "*",
-    "should": "*"
+    "mocha": "*"
   },
   "keywords": [
     "github",
