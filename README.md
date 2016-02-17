@@ -1,4 +1,4 @@
-# typeof-github-event [![NPM version](https://img.shields.io/npm/v/typeof-github-event.svg)](https://www.npmjs.com/package/typeof-github-event) [![Build Status](https://img.shields.io/travis/https://github.com/doowb/typeof-github-event.svg)](https://travis-ci.org/https://github.com/doowb/typeof-github-event)
+# typeof-github-event [![NPM version](https://img.shields.io/npm/v/typeof-github-event.svg)](https://www.npmjs.com/package/typeof-github-event) [![Build Status](https://img.shields.io/travis/doowb/typeof-github-event.svg)](https://travis-ci.org/doowb/typeof-github-event)
 
 > Detect the type of github webhook events.
 
@@ -87,7 +87,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 ## License
 
 Copyright © 2016 [Brian Woodward](https://github.com/doowb)
-Released under the [MIT license](https://github.com/https://github.com/doowb/typeof-github-event/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/doowb/typeof-github-event/blob/master/LICENSE).
 
 ***
 
