@@ -5,10 +5,13 @@
   "homepage": "https://github.com/doowb/typeof-github-event",
   "author": "Brian Woodward (https://github.com/doowb)",
   "repository": "doowb/typeof-github-event",
-  "bugs": "https://github.com/doowb/typeof-github-event/issues",
+  "bugs": {
+    "url": "https://github.com/doowb/typeof-github-event/issues"
+  },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "main": "index.js",
   "engines": {
@@ -22,8 +25,8 @@
     "mocha": "*"
   },
   "keywords": [
-    "github",
     "events",
+    "github",
     "webhook",
     "webhooks"
   ],
