@@ -21,7 +21,12 @@ module.exports = {
     }
   },
   is: function(event, payload) {
-    return this.typeof(payload) === event;
+    if (!events[event]) {
+      return false;
+    }
+
+    var validate = utils.valid(payload);
+    return validate(events[event]);
   }
 };
 
